@@ -4,16 +4,18 @@
 
     &TextBlock {
         padding-top: 75px;
+        width: 60%;
     }
 
     &Title {
-        font-size: 50px;
+        font-size: 47px;
         font-weight: 700;
         font-family: 'Raleway', sans-serif;
         margin-bottom: 45px;
 
         span {
             color: #0029ea;
+            font-weight: 700;
         }
     }
 
@@ -32,9 +34,28 @@
 
     &Img {
         position: relative;
-        left: 100px;
+        width: 40%;
+        left: -75px;
+
+        .bg {
+            position: absolute;
+            top: 20%;
+            left: 15%;
+            width: 420px;
+            height: 370px;
+            background: linear-gradient(135deg, #002bf6 0%, #0027de 100%);
+            box-shadow: -0.871512px 0.871512px 1.74302px rgba(0, 28, 159, 0.2),
+                0.871512px -0.871512px 1.74302px rgba(0, 28, 159, 0.2),
+                -0.871512px -0.871512px 1.74302px rgba(0, 54, 255, 0.9),
+                0.871512px 0.871512px 2.61454px rgba(0, 28, 159, 0.9),
+                inset 0.871512px 0.871512px 1.74302px rgba(0, 54, 255, 0.3),
+                inset -0.871512px -0.871512px 1.74302px rgba(0, 28, 159, 0.5);
+            filter: blur(86px);
+            transform: rotate(-110.5deg);
+        }
 
         img {
+            position: absolute;
             width: 600px;
             height: auto;
         }
@@ -56,6 +77,7 @@
         color: #fff;
         text-decoration: none;
         background-color: #000;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
         .linkText {
             display: flex;

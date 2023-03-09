@@ -45,6 +45,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className={styles.heroImg}>
+                <div className={styles.bg}>Хуй</div>
                 <img src="/assets/img/mockup_hero.svg" alt="Main mockup" />
             </div>
         </div>
