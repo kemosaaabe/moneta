@@ -1,9 +1,11 @@
+import styles from './ShortFeatures.module.scss';
+
 const ShortFeatures = () => {
     return (
-        <div className="shortFeatures">
-            <div className="featureBlock">
-                <div className="featureTitle">
-                    <div className="featureIcon">
+        <div className={styles.shortFeatures}>
+            <div className={styles.featureBlock}>
+                <div className={styles.featureTitle}>
+                    <div className={styles.featureIcon}>
                         <img
                             src="/assets/img/shortFeatures/diamond.svg"
                             alt="Diamond"
@@ -16,9 +18,9 @@ const ShortFeatures = () => {
                     функциональным и приятным
                 </p>
             </div>
-            <div className="featureBlock">
-                <div className="featureTitle">
-                    <div className="featureIcon">
+            <div className={styles.featureBlock}>
+                <div className={styles.featureTitle}>
+                    <div className={styles.featureIcon}>
                         <img
                             src="/assets/img/shortFeatures/check_mark.svg"
                             alt="Check mark"
@@ -31,9 +33,9 @@ const ShortFeatures = () => {
                     грамотного ведения бюджета совершенно бесплатно
                 </p>
             </div>
-            <div className="featureBlock">
-                <div className="featureTitle">
-                    <div className="featureIcon">
+            <div className={styles.featureBlock}>
+                <div className={styles.featureTitle}>
+                    <div className={styles.featureIcon}>
                         <img
                             src="/assets/img/shortFeatures/bar_chart.svg"
                             alt="Bar chart"

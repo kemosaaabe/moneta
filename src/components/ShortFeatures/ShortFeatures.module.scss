@@ -1,0 +1,65 @@
+.shortFeatures {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    background: linear-gradient(
+        135deg,
+        #ffffff 35.73%,
+        #d4e6ff 99.99%,
+        #d4e6ff 100%
+    );
+    box-shadow: 96px 84px 51px rgba(128, 128, 128, 0.01),
+        54px 47px 43px rgba(128, 128, 128, 0.03),
+        24px 21px 32px rgba(128, 128, 128, 0.05),
+        6px 5px 18px rgba(128, 128, 128, 0.06),
+        0px 0px 0px rgba(128, 128, 128, 0.06);
+    border-radius: 10px;
+    margin-bottom: 100px;
+
+    .featureBlock {
+        flex: 1;
+        padding: 0 34px;
+
+        p {
+            font-size: 16px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            line-height: 150%;
+            margin-top: 25px;
+        }
+    }
+
+    .featureBlock:nth-child(2) {
+        padding: 0 60px;
+        border-right: 1px solid #0029ea;
+        border-left: 1px solid #0029ea;
+    }
+
+    .featureTitle {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        h3 {
+            font-size: 18px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            line-height: 150%;
+        }
+    }
+
+    .featureBlock:last-child {
+        .featureTitle {
+            h3 {
+                width: 100px;
+            }
+        }
+    }
+
+    .featureIcon {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
