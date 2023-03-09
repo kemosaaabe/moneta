@@ -1,4 +1,5 @@
 import Hero from '../../components/Hero';
+import LongMockup from '../../components/LongMockup';
 import ShortFeatures from '../../components/ShortFeatures';
 
 const Main = () => {
@@ -6,6 +7,7 @@ const Main = () => {
         <>
             <Hero />
             <ShortFeatures />
+            <LongMockup />
         </>
     );
 };
