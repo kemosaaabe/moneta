@@ -4,17 +4,19 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.logo}>логотип</div>
-            <nav className={styles.nav}>
-                <ul>
-                    <li>Главная</li>
-                    <li>Обзор</li>
-                    <li>Отзывы</li>
-                    <li>FAQ</li>
-                    <li>Контакты</li>
-                </ul>
-            </nav>
-            <div>
-                <a href="">Скачать</a>
+            <div className={styles.navWrapper}>
+                <nav className={styles.nav}>
+                    <ul className={styles.navList}>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/">Обзор</a></li>
+                        <li><a href="/">Отзывы</a></li>
+                        <li><a href="/">FAQ</a></li>
+                        <li><a href="/">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div className={styles.btn}>
+                    <a href="/">Скачать</a>
+                </div>
             </div>
         </header>
     );
