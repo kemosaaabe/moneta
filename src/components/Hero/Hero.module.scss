@@ -1,0 +1,73 @@
+.hero {
+    padding-top: 35px;
+    display: flex;
+
+    &TextBlock {
+        padding-top: 75px;
+    }
+
+    &Title {
+        font-size: 50px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+        margin-bottom: 45px;
+
+        span {
+            color: #0029ea;
+        }
+    }
+
+    &Text {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        p {
+            line-height: 150%;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Raleway', sans-serif;
+        }
+    }
+
+    &Img {
+        position: relative;
+        left: 100px;
+
+        img {
+            width: 600px;
+            height: auto;
+        }
+    }
+}
+
+.buttons {
+    margin-top: 80px;
+    display: flex;
+    gap: 44px;
+
+    a {
+        padding: 10px 40px 10px 15px;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        border: 2px solid #838583;
+        border-radius: 14px;
+        color: #fff;
+        text-decoration: none;
+        background-color: #000;
+
+        .linkText {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            letter-spacing: 3%;
+        }
+
+        .linkName {
+            font-weight: 700;
+        }
+    }
+}
