@@ -1,0 +1,38 @@
+.longMockup {
+    display: flex;
+}
+
+.mockupImg {
+    width: 50%;
+    position: relative;
+    img {
+        width: 865px;
+        position: relative;
+        top: -110px;
+        left: -200px;
+    }
+}
+
+.mockupText {
+    padding-top: 30px;
+    width: 50%;
+
+    h2 {
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+        font-size: 40px;
+
+        span {
+            font-weight: 700;
+            color: #0029ea;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        line-height: 150%;
+        margin: 60px 0;
+    }
+}
