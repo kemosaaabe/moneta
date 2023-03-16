@@ -1,7 +1,8 @@
 .swiper {
     width: 230px;
     overflow: visible;
-    position: static;
+    z-index: 10;
+    position: relative;
 }
 
 .swiper-slide {
