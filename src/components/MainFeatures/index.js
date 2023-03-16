@@ -12,14 +12,7 @@ import { EffectCoverflow, Navigation } from 'swiper';
 import React from 'react';
 
 const MainFeatures = () => {
-    const [slideInfo, setSlideInfo] = React.useState({
-        index: 2,
-        title: 'В приложении подробная и прозрачная аналитика',
-        description: `Наше приложение ведет статистику за выбранный период
-        времени по категориям, доходам и расходам, а также по
-        каждому банковскому счету — это позволяет проводить
-        полноценный финансовый анализ.`,
-    });
+    const [slideInfo, setSlideInfo] = React.useState(data[2]);
 
     return (
         <div className={styles.mainFeatures}>
