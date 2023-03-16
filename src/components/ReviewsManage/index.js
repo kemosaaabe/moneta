@@ -12,11 +12,13 @@ const Review = () => {
                 <div className={styles.manImg}>
                     <img src="/assets/img/ReviewsManage/man.svg" alt="" />
                 </div>
-                <div className="manName">
+                <div className={styles.manName}>
                     <h3>Дмитрий</h3>
-                    <div className="stars">
+                    <div className={styles.stars}>
                         {[...Array(5)].map(() => (
-                            <img src="/assets/img/ReviewsManage/star.svg" />
+                            <div>
+                                <img src="/assets/img/ReviewsManage/star.svg" />
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -31,7 +33,7 @@ const Review = () => {
     );
 };
 
-const ReviewsManage = () => {
+const Reviews = () => {
     return (
         <div className={styles.reviewsManage}>
             <div className={styles.reviews}>
@@ -44,21 +46,21 @@ const ReviewsManage = () => {
                         prevEl: '.swiper-button-prev',
                     }}
                 >
-                    <SwiperSlide>
-                        <Review />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Review />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Review />
-                    </SwiperSlide>
+                    {[...Array(3)].map(() => (
+                        <SwiperSlide>
+                            <Review />
+                        </SwiperSlide>
+                    ))}
                     <div className="swiper-button-prev"></div>
                     <div className="swiper-button-next"></div>
                 </Swiper>
             </div>
         </div>
     );
+};
+
+const ReviewsManage = () => {
+    return <Reviews />;
 };
 
 export default ReviewsManage;
