@@ -35,26 +35,24 @@ const Review = () => {
 
 const Reviews = () => {
     return (
-        <div className={styles.reviewsManage}>
-            <div className={styles.reviews}>
-                <h2>Отзывы пользователей</h2>
-                <Swiper
-                    className="reviewsSwiper"
-                    modules={[Navigation]}
-                    navigation={{
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    }}
-                >
-                    {[...Array(3)].map(() => (
-                        <SwiperSlide>
-                            <Review />
-                        </SwiperSlide>
-                    ))}
-                    <div className="swiper-button-prev"></div>
-                    <div className="swiper-button-next"></div>
-                </Swiper>
-            </div>
+        <div className={styles.reviews}>
+            <h2>Отзывы пользователей</h2>
+            <Swiper
+                className="reviewsSwiper"
+                modules={[Navigation]}
+                navigation={{
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }}
+            >
+                {[...Array(3)].map(() => (
+                    <SwiperSlide>
+                        <Review />
+                    </SwiperSlide>
+                ))}
+                <div className="swiper-button-prev"></div>
+                <div className="swiper-button-next"></div>
+            </Swiper>
         </div>
     );
 };
