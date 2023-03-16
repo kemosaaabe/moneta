@@ -6,6 +6,7 @@
 
 .reviews {
     padding-top: 100px;
+    padding-bottom: 20px;
     position: relative;
 }
 
@@ -73,5 +74,44 @@
 }
 
 .manageBlock {
-    
+    background: #f7faff;
+    display: flex;
+    width: 68%;
+    margin: 0 auto;
+    border-radius: 15px;
+
+    .textBlock {
+        padding-bottom: 68px;
+        padding-left: 70px;
+        width: 70%;
+        h2 {
+            width: 70%;
+            font-weight: 500;
+            font-family: 'Raleway', sans-serif;
+            font-size: 40px;
+            margin-top: 80px;
+
+            span {
+                font-weight: 700;
+                color: #0029ea;
+            }
+        }
+
+        p {
+            width: 75%;
+            font-weight: 400;
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            line-height: 140%;
+            margin: 40px 0;
+        }
+    }
+
+    .imageBlock {
+        display: flex;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
 }
