@@ -1,9 +1,11 @@
-.reviews {
-    padding-top: 100px;
-    height: 100vh;
+.reviewsManage {
     background: url('../../../public/assets/img/ReviewsManage/bg.svg') top
         no-repeat;
     background-size: contain;
+}
+
+.reviews {
+    padding-top: 100px;
     position: relative;
 }
 

@@ -57,8 +57,17 @@ const Reviews = () => {
     );
 };
 
+const ManageBlock = () => {
+    return <div>хуй</div>;
+};
+
 const ReviewsManage = () => {
-    return <Reviews />;
+    return (
+        <div className={styles.reviewsManage}>
+            <Reviews />
+            <ManageBlock />
+        </div>
+    );
 };
 
 export default ReviewsManage;
