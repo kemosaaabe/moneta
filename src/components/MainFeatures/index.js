@@ -19,6 +19,7 @@ const MainFeatures = () => {
             <h2 className={styles.Title}>Возможности приложения</h2>
             <div className={styles.featuresSwiper}>
                 <Swiper
+                    className="mainFeaturesSwiper"
                     effect={'coverflow'}
                     grabCursor
                     centeredSlides

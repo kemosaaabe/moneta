@@ -1,7 +1,8 @@
 import Hero from '../../components/Hero';
 import LongMockup from '../../components/LongMockup';
-import MainFeatures from '../../components/MainFeatures';
 import ShortFeatures from '../../components/ShortFeatures';
+import MainFeatures from '../../components/MainFeatures';
+import ReviewsManage from '../../components/ReviewsManage';
 
 const Main = () => {
     return (
@@ -10,6 +11,7 @@ const Main = () => {
             <ShortFeatures />
             <LongMockup />
             <MainFeatures />
+            <ReviewsManage />
         </>
     );
 };
