@@ -1,4 +1,5 @@
 import styles from './ReviewsManage.module.scss';
+import DownloadButtons from '../DownloadButtons';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
@@ -10,14 +11,17 @@ const Review = () => {
         <div className={styles.review}>
             <div className={styles.man}>
                 <div className={styles.manImg}>
-                    <img src="/assets/img/ReviewsManage/man.svg" alt="" />
+                    <img src="/assets/img/ReviewsManage/man.svg" alt="man" />
                 </div>
                 <div className={styles.manName}>
                     <h3>Дмитрий</h3>
                     <div className={styles.stars}>
                         {[...Array(5)].map(() => (
                             <div>
-                                <img src="/assets/img/ReviewsManage/star.svg" />
+                                <img
+                                    src="/assets/img/ReviewsManage/star.svg"
+                                    alt="start"
+                                />
                             </div>
                         ))}
                     </div>
@@ -58,7 +62,26 @@ const Reviews = () => {
 };
 
 const ManageBlock = () => {
-    return <div>хуй</div>;
+    return (
+        <div className={styles.manageBlock}>
+            <div className={styles.textBlock}>
+                <h2>
+                    Управляйте своими деньгами <span>вместе с нами</span>
+                </h2>
+                <p>
+                    С помощью нашего приложения вы сможете контролировать свои
+                    расходы и планировать бюджет в рамках установленных лимитов
+                </p>
+                <DownloadButtons />
+            </div>
+            <div className={styles.imageBlock}>
+                <img
+                    src="/assets/img/ReviewsManage/manageImg.svg"
+                    alt="phones"
+                />
+            </div>
+        </div>
+    );
 };
 
 const ReviewsManage = () => {
