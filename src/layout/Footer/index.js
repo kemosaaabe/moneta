@@ -22,16 +22,16 @@ const Footer = () => {
                         <h5>Основное:</h5>
                         <ul>
                             <li>
-                                <a href="">Главная</a>
+                                <a href="/">Главная</a>
                             </li>
                             <li>
-                                <a href="">Обзор</a>
+                                <a href="/">Обзор</a>
                             </li>
                             <li>
-                                <a href="">Отзывы</a>
+                                <a href="/">Отзывы</a>
                             </li>
                             <li>
-                                <a href="">Частые вопросы</a>
+                                <a href="/">Частые вопросы</a>
                             </li>
                         </ul>
                     </div>
@@ -40,7 +40,7 @@ const Footer = () => {
                         <ul>
                             <li>moneta@yandex.ru</li>
                             <li>
-                                <a href="">Поддержка</a>
+                                <a href="/">Поддержка</a>
                             </li>
                         </ul>
                     </div>

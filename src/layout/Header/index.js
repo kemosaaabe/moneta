@@ -28,7 +28,10 @@ const Header = () => {
                         </ul>
                     </nav>
                     <div className={styles.btn}>
-                        <a href="/">Скачать</a>
+                        <a href="/">
+                            <img src="/assets/img/icons/download.svg" />
+                            Скачать
+                        </a>
                     </div>
                 </div>
             </header>
