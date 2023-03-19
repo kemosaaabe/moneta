@@ -61,8 +61,8 @@ const Balls = () => {
                 ballStyles={{
                     width: '30px',
                     height: '30px',
-                    top: '53.5%',
-                    left: '28.5%',
+                    top: '54.5%',
+                    left: '26.5%',
                     background: 'transparent',
                 }}
             />
@@ -87,8 +87,8 @@ const Balls = () => {
                 ballStyles={{
                     width: '50px',
                     height: '50px',
-                    top: '18.3%',
-                    left: '54.3%',
+                    top: '17.3%',
+                    left: '55.3%',
                 }}
             />
             <Ball
