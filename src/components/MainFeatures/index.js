@@ -19,7 +19,7 @@ const MainFeatures = () => {
             <h2 className={styles.Title}>Возможности приложения</h2>
             <div className={styles.featuresSwiper}>
                 <Swiper
-                    className="mainFeaturesSwiper"
+                    modules={[EffectCoverflow, Navigation]}
                     effect={'coverflow'}
                     grabCursor
                     centeredSlides
@@ -42,35 +42,35 @@ const MainFeatures = () => {
                         );
                         setSlideInfo(obj);
                     }}
-                    modules={[EffectCoverflow, Navigation]}
+                    className="mainFeaturesSwiper"
                 >
                     <SwiperSlide>
                         <img
-                            src="/assets/img/featuresImages/4.svg"
+                            src="/assets/img/featuresImages/4.png"
                             alt="phone"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src="/assets/img/featuresImages/5.svg"
+                            src="/assets/img/featuresImages/5.png"
                             alt="phone"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src="/assets/img/featuresImages/1.svg"
+                            src="/assets/img/featuresImages/1.png"
                             alt="phone"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src="/assets/img/featuresImages/2.svg"
+                            src="/assets/img/featuresImages/2.png"
                             alt="phone"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src="/assets/img/featuresImages/3.svg"
+                            src="/assets/img/featuresImages/3.png"
                             alt="phone"
                         />
                     </SwiperSlide>
