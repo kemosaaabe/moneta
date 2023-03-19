@@ -9,18 +9,39 @@ const FreqAskQuestions = () => {
                     <img src="/assets/img/faq_mockup.svg" alt="faqMockup" />
                 </div>
                 <div className={styles.faqText}>
-                    <p>
-                        <span>Доступно ли приложение для IOS?</span>
-                        <div className={styles.faqTextArrow}></div>
-                    </p>
-                    <p>
-                        <span>Доступно ли приложение для IOS?</span>
-                        <div className={styles.faqTextArrow}></div>
-                    </p>
-                    <p>
-                        <span>Сколько категорий можно добавить?</span>
-                        <div className={styles.faqTextArrow}></div>
-                    </p>
+                    <div className={styles.faqItem}>
+                        <input type="checkbox" name="" id="arrow-checkbox-1" />
+                        <label htmlFor="arrow-checkbox-1">
+                            Доступно ли приложение для IOS?
+                        </label>
+                        <div className={styles.faq}>
+                            На данный момент нет, мобильное приложение для IOS
+                            на стадии разработки
+                        </div>
+                    </div>
+                    <div className={styles.faqItem}>
+                        <input type="checkbox" name="" id="arrow-checkbox-2" />
+                        <label htmlFor="arrow-checkbox-2">
+                            Доступно ли приложение для IOS?
+                        </label>
+                        <div className={styles.faq}>
+                            На данный момент нет, мобильное приложение для IOS
+                            на стадии разработки
+                        </div>
+                    </div>
+                    <div className={styles.faqItem}>
+                        <input type="checkbox" name="" id="arrow-checkbox-3" />
+                        <label htmlFor="arrow-checkbox-3">
+                            Сколько категорий можно добавить?
+                        </label>
+                        <div className={styles.faq}>
+                            На данный момент нет, мобильное приложение для IOS
+                            на стадии разработки
+                        </div>
+                    </div>
+                    <div className={styles.link}>
+                        Не нашел ответа? <a href="/">Напиши нам</a>
+                    </div>
                 </div>
             </div>
         </div>
