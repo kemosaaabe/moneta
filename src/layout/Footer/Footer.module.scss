@@ -1,0 +1,96 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 65px;
+    padding-top: 75px;
+    margin-top: 20px;
+    background: url('../../../public/assets/img/footer_bg.svg') no-repeat bottom;
+    background-size: 110% 100%;
+
+    h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 33px;
+        font-weight: 700;
+        text-align: center;
+        color: #0029ea;
+        margin-bottom: 60px;
+    }
+}
+
+.footerText {
+    display: flex;
+    align-items: flex-end;
+    gap: 250px;
+    margin-top: 75px;
+
+    .author {
+        display: flex;
+        flex-direction: column;
+        gap: 95px;
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            img {
+                width: 130px;
+            }
+
+            span {
+                width: 200px;
+                font-family: 'Raleway', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        &Text {
+            width: 220px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+
+    .linksBlock {
+        display: flex;
+
+        .contacts {
+            a {
+                border-bottom: 1px solid black;
+            }
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+
+            li {
+                font-family: Raleway;
+                font-size: 16px;
+                font-weight: 400;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    transition: color 0.2s ease-in-out;
+
+                    &:hover {
+                        color: #0029ea;
+                    }
+                }
+            }
+        }
+
+        h5 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+    }
+}

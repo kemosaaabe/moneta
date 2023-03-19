@@ -1,9 +1,15 @@
 import styles from './DownloadButtons.module.scss';
 
-const DownloadButtons = () => {
+const DownloadButtons = ({ footer }) => {
     return (
-        <div className={styles.buttons}>
-            <a href="/">
+        <div className={styles.buttons} style={{ gap: footer && '130px' }}>
+            <a
+                href="/"
+                style={{
+                    background: footer && '#fff',
+                    color: footer && '#000',
+                }}
+            >
                 <img
                     src="/assets/img/btns/google_play.svg"
                     width={55}
@@ -15,9 +21,19 @@ const DownloadButtons = () => {
                     <span className={styles.linkName}>Google Play</span>
                 </span>
             </a>
-            <a href="/">
+            <a
+                href="/"
+                style={{
+                    background: footer && '#fff',
+                    color: footer && '#000',
+                }}
+            >
                 <img
-                    src="/assets/img/btns/apple.svg"
+                    src={
+                        footer
+                            ? '/assets/img/btns/apple_footer.svg'
+                            : '/assets/img/btns/apple.svg'
+                    }
                     alt="App Store"
                     width={55}
                     height="auto"
