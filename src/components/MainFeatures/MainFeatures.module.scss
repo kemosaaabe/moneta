@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .mainFeatures {
     padding-top: 80px;
     padding-bottom: 105px;
@@ -13,9 +15,7 @@
 
 .Title {
     text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 40px;
+    @include h2Title;
     margin-bottom: 45px;
 }
 

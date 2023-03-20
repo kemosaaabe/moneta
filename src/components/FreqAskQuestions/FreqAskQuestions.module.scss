@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .faqBlock {
     width: 1000px;
     margin: 95px auto 0;
@@ -5,14 +7,13 @@
 
 .title {
     text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 40px;
+    @include h2Title;
 }
 
 .faqContent {
     display: flex;
     justify-content: space-between;
+    height: 650px;
 
     .faqText {
         width: 560px;
@@ -28,6 +29,11 @@
 
             a {
                 color: #000;
+                transition: color 0.2s ease-in-out;
+
+                &:hover {
+                    color: #0029ea;
+                }
             }
         }
     }

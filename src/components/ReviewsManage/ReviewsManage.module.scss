@@ -1,13 +1,20 @@
+@import '../../index.scss';
+
 .reviewsManage {
     background: url('../../../public/assets/img/ReviewsManage/bg.svg') top
         no-repeat;
     background-size: contain;
 }
 
+.reviewsSwiperWrapper {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
 .reviews {
     padding-top: 100px;
     padding-bottom: 20px;
-    position: relative;
 }
 
 .review {
@@ -67,9 +74,7 @@
 .reviews {
     h2 {
         text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500;
-        font-size: 40px;
+        @include h2Title;
     }
 }
 
@@ -86,9 +91,7 @@
         width: 70%;
         h2 {
             width: 70%;
-            font-weight: 500;
-            font-family: 'Raleway', sans-serif;
-            font-size: 40px;
+            @include h2Title;
             margin-top: 80px;
 
             span {

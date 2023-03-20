@@ -11,7 +11,8 @@
     }
 
     &Title {
-        font-size: 47px;
+        width: 90%;
+        font-size: 45px;
         font-weight: 700;
         font-family: 'Raleway', sans-serif;
         margin-bottom: 45px;
@@ -19,6 +20,10 @@
         span {
             color: #0029ea;
             font-weight: 700;
+        }
+
+        @media (max-width: 1200px) {
+            font-size: 40px;
         }
     }
 
