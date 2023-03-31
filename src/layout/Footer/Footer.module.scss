@@ -8,6 +8,10 @@
     background: url('../../../public/assets/img/footer_bg.svg') no-repeat bottom;
     background-size: 110% 100%;
 
+    @media (max-width: 1200px) {
+        background-size: 120% 100%;
+    }
+
     h3 {
         font-family: 'Raleway', sans-serif;
         font-size: 33px;

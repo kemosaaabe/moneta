@@ -12,18 +12,21 @@ const Hero = () => {
                     </h1>
                     <div className={styles.heroText}>
                         <div>
-                            <img src="/assets/img/icons/union.svg" alt="Union" />
+                            <img
+                                src="/assets/img/icons/union.svg"
+                                alt="Union"
+                            />
                         </div>
                         <p>
-                            Скачайте приложение с аналитикой ваших трат, продуманным
-                            интерфейсом и приятным дизайном{' '}
+                            Скачайте приложение с аналитикой ваших трат,
+                            продуманным интерфейсом и приятным дизайном{' '}
                         </p>
                     </div>
                     <DownloadButtons />
                 </div>
                 <div className={styles.heroImg}>
                     <div className={styles.bg}>Хуй</div>
-                    <img src="/assets/img/mockup_hero.svg" alt="Main mockup" />
+                    <img src="/assets/img/mockup_hero.png" alt="Main mockup" />
                 </div>
             </div>
         </div>

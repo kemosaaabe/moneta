@@ -9,7 +9,23 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .container {
-    width: 1050px;
+    width: 70%;
     margin: 0 auto;
+}
+
+@media (max-width: 1300px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .container {
+        width: 90%;
+    }
 }
