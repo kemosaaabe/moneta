@@ -6,7 +6,7 @@ const Footer = () => {
     const isMobile = useMediaQuery('(max-width: 850px)');
 
     return (
-        <div className={styles.footer}>
+        <div className={styles.footer} id="footer">
             <h3>Скачивай и управляй финансами!</h3>
             <DownloadButtons footer={true} />
             <div className={styles.footerText}>

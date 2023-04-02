@@ -6,11 +6,23 @@ const Header = () => {
     const isMobile = useMediaQuery('(max-width: 900px)');
     const [isOpen, setIsOpen] = React.useState(false);
 
-    if (isOpen) {
-        document.querySelector('body').style.overflow = 'hidden';
-    } else {
-        document.querySelector('body').style.overflowY = 'visible';
-    }
+    const onOpenMenu = (isMenuOpen) => {
+        if (isMenuOpen) {
+            document.querySelector('body').style.overflow = 'hidden';
+        } else {
+            document.querySelector('body').style.overflow = 'visible';
+        }
+
+        setIsOpen(isMenuOpen);
+    };
+
+    const onLinkClick = (e) => {
+        const eventLink = e.target.closest('a');
+        if (!eventLink) return;
+
+        document.querySelector('input').checked = false;
+        onOpenMenu(false);
+    };
 
     return (
         <div className="container">
@@ -23,28 +35,29 @@ const Header = () => {
                         <div className={styles.hamburgerWrapper}>
                             <input
                                 type="checkbox"
-                                onClick={() => {
-                                    setIsOpen(!isOpen);
-                                }}
+                                onClick={() => onOpenMenu(!isOpen)}
                             />
                             <div className={styles.hamburger}>
                                 <span className={styles.line}></span>
                                 <span className={styles.line}></span>
                                 <span className={styles.line}></span>
                             </div>
-                            <div className={styles.menuItems}>
+                            <div
+                                className={styles.menuItems}
+                                onClick={onLinkClick}
+                            >
                                 <ul className={styles.menuItem}>
                                     <li>
-                                        <a href="/">Обзор</a>
+                                        <a href="#features">Обзор</a>
                                     </li>
                                     <li>
-                                        <a href="/">Отзывы</a>
+                                        <a href="#reviews">Отзывы</a>
                                     </li>
                                     <li>
-                                        <a href="/">FAQ</a>
+                                        <a href="#faq">FAQ</a>
                                     </li>
                                     <li>
-                                        <a href="/">Контакты</a>
+                                        <a href="#footer">Контакты</a>
                                     </li>
                                 </ul>
                             </div>
@@ -54,16 +67,16 @@ const Header = () => {
                             <nav className={styles.nav}>
                                 <ul className={styles.navList}>
                                     <li>
-                                        <a href="/">Обзор</a>
+                                        <a href="#features">Обзор</a>
                                     </li>
                                     <li>
-                                        <a href="/">Отзывы</a>
+                                        <a href="#reviews">Отзывы</a>
                                     </li>
                                     <li>
-                                        <a href="/">FAQ</a>
+                                        <a href="#faq">FAQ</a>
                                     </li>
                                     <li>
-                                        <a href="/">Контакты</a>
+                                        <a href="#footer">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>

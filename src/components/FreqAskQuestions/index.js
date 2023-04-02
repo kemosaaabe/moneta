@@ -2,7 +2,7 @@ import styles from './FreqAskQuestions.module.scss';
 
 const FreqAskQuestions = () => {
     return (
-        <div className={styles.faqBlock}>
+        <div className={styles.faqBlock} id="faq">
             <h2 className={styles.title}>Частые вопросы</h2>
             <div className={styles.faqContent}>
                 <div className={styles.faqImg}>

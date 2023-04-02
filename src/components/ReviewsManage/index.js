@@ -39,7 +39,7 @@ const Review = () => {
 
 const Reviews = () => {
     return (
-        <div className={styles.reviews}>
+        <div className={styles.reviews} id="reviews">
             <h2>Отзывы пользователей</h2>
             <div className={styles.reviewsSwiperWrapper}>
                 <Swiper

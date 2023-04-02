@@ -16,7 +16,7 @@ const MainFeatures = () => {
     const [slideInfo, setSlideInfo] = React.useState(data[2]);
 
     return (
-        <div className={styles.mainFeatures}>
+        <div className={styles.mainFeatures} id="features">
             <h2 className={styles.Title}>Возможности приложения</h2>
             <div className={styles.featuresSwiper}>
                 <Swiper
