@@ -66,8 +66,10 @@
     }
 
     input:checked ~ .menuItems {
-        right: 0px;
+        // right: 0px;
+        // transform: translateX(0);
         transform: translateX(0);
+
         box-shadow: -3px 0 8px 1px rgba(0, 0, 0, 0.15);
     }
 
@@ -108,9 +110,10 @@
         position: absolute;
         width: 250px;
         top: 0px;
-        right: -250px;
+        right: 0;
+        transform: translateX(100%);
         text-align: right;
-        transition: right 0.4s ease-in-out;
+        transition: transform 0.4s ease-in-out;
         height: 100vh;
         z-index: 99;
         background: rgb(255, 255, 255);

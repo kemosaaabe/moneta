@@ -8,10 +8,10 @@ const Header = () => {
 
     const onOpenMenu = (isMenuOpen) => {
         if (isMenuOpen) {
-            document.querySelector('body').style.overflowY = 'hidden';
+            document.querySelector('body').style.overflow = 'hidden';
             window.scrollTo(0, 0);
         } else {
-            document.querySelector('body').style.overflowY = 'hidden';
+            document.querySelector('body').style.overflow = 'visible';
         }
 
         setIsOpen(isMenuOpen);
