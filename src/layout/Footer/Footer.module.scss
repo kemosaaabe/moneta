@@ -5,24 +5,7 @@
     padding-bottom: 65px;
     padding-top: 75px;
     margin-top: 60px;
-    background: url('../../../public/assets/img/footer_bg.svg') no-repeat bottom;
-    background-size: 110% 100%;
-
-    @media (max-width: 1200px) {
-        background-size: 120% 100%;
-    }
-
-    @media (max-width: 850px) {
-        background-size: 170% 100%;
-    }
-
-    @media (max-width: 650px) {
-        background-size: 190% 100%;
-    }
-
-    @media (max-width: 450px) {
-        background-size: 210% 100%;
-    }
+    background: #f7faff;
 
     h3 {
         font-family: 'Raleway', sans-serif;
@@ -32,7 +15,6 @@
         color: #0029ea;
         margin-bottom: 60px;
         padding: 0 10px;
-        margin-top: 75px;
 
         @media (max-width: 600px) {
             font-size: 31px;

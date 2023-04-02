@@ -51,10 +51,7 @@ const Footer = () => {
                     </div>
                 </div>
                 {isMobile && (
-                    <div
-                        className={styles.authorText}
-                        style={{ marginBottom: '75px' }}
-                    >
+                    <div className={styles.authorText}>
                         © 2023, ИП Полтавец Станислав Владиславович Все права
                         защищены
                     </div>
