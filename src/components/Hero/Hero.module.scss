@@ -4,15 +4,25 @@
     display: flex;
     margin-top: 35px;
 
+    @media (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
     &TextBlock {
         padding-top: 75px;
         width: 60%;
         position: relative;
         z-index: 10;
+
+        @media (max-width: 900px) {
+            width: 90%;
+        }
     }
 
     &Title {
-        // width: 90%;
         font-size: 45px;
         font-weight: 700;
         font-family: 'Raleway', sans-serif;
@@ -25,6 +35,10 @@
 
         @media (max-width: 1200px) {
             font-size: 40px;
+        }
+
+        @media (max-width: 1000px) {
+            font-size: 38px;
         }
     }
 
@@ -40,6 +54,11 @@
             font-size: 20px;
             font-weight: 400;
             font-family: 'Raleway', sans-serif;
+
+            @media (max-width: 1200px) {
+                font-size: 18px;
+                width: 80%;
+            }
         }
     }
 
@@ -47,6 +66,18 @@
         position: relative;
         width: 40%;
         left: -75px;
+
+        @media (max-width: 900px) {
+            width: 55%;
+        }
+
+        @media (max-width: 950px) {
+            left: -50px;
+        }
+
+        @media (max-width: 900px) {
+            margin-top: 40px;
+        }
 
         .bg {
             position: absolute;
@@ -63,13 +94,31 @@
                 inset -0.871512px -0.871512px 1.74302px rgba(0, 28, 159, 0.5);
             filter: blur(86px);
             transform: rotate(-110.5deg);
+
+            @media (max-width: 1100px) {
+                width: 370px;
+                height: 320px;
+            }
+
+            @media (max-width: 950px) {
+                width: 350px;
+                height: 300px;
+            }
         }
 
         img {
             top: -15px;
-            position: absolute;
+            position: relative;
             width: 150%;
             height: auto;
+
+            @media (max-width: 1200px) {
+                width: 140%;
+            }
+
+            @media (max-width: 1100px) {
+                width: 135%;
+            }
         }
     }
 }

@@ -25,7 +25,7 @@ const Hero = () => {
                     <DownloadButtons />
                 </div>
                 <div className={styles.heroImg}>
-                    <div className={styles.bg}>Хуй</div>
+                    <div className={styles.bg}></div>
                     <img src="/assets/img/mockup_hero.png" alt="Main mockup" />
                 </div>
             </div>

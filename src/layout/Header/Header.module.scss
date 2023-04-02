@@ -38,6 +38,118 @@
     }
 }
 
+.hamburgerWrapper {
+    input {
+        position: absolute;
+        height: 32px;
+        width: 30px;
+        display: block;
+        z-index: 101;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    input:checked ~ .hamburger {
+        .line {
+            &:first-child {
+                transform: rotate(33deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:last-child {
+                transform: rotate(-33deg);
+            }
+        }
+    }
+
+    input:checked ~ .menuItems {
+        right: 0px;
+        box-shadow: -3px 0 8px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .hamburger {
+        position: relative;
+        z-index: 100;
+        display: block;
+        height: 23px;
+        width: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .line {
+            display: block;
+            height: 4px;
+            width: 100%;
+            border-radius: 10px;
+            background: #000;
+
+            &:first-child {
+                transform-origin: 0% 0%;
+                transition: transform 0.4s ease-in-out;
+            }
+
+            &:nth-child(2) {
+                transition: opacity 0.2s ease-in-out;
+            }
+
+            &:last-child {
+                transform-origin: 0% 100%;
+                transition: transform 0.4s ease-in-out;
+            }
+        }
+    }
+
+    .menuItems {
+        position: absolute;
+        width: 250px;
+        top: 0px;
+        right: -250px;
+        text-align: right;
+        transition: all 0.4s ease-in-out;
+        height: 100vh;
+        z-index: 99;
+        background: rgb(255, 255, 255);
+
+        @media (max-width: 450px) {
+            width: 100%;
+            right: -100%;
+
+            ul {
+                align-items: center;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding-right: 35px;
+            padding-top: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    transition: color 0.2s ease-in-out;
+
+                    &:hover {
+                        color: #0029ea;
+                    }
+
+                    &:focus {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .btn {
     a {
         color: #0029ea;

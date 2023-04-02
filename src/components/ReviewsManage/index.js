@@ -16,8 +16,8 @@ const Review = () => {
                 <div className={styles.manName}>
                     <h3>Дмитрий</h3>
                     <div className={styles.stars}>
-                        {[...Array(5)].map(() => (
-                            <div>
+                        {[...Array(5)].map((item, index) => (
+                            <div key={index}>
                                 <img
                                     src="/assets/img/ReviewsManage/star.svg"
                                     alt="start"
@@ -50,8 +50,8 @@ const Reviews = () => {
                         prevEl: '.swiper-button-prev',
                     }}
                 >
-                    {[...Array(3)].map(() => (
-                        <SwiperSlide>
+                    {[...Array(3)].map((item, index) => (
+                        <SwiperSlide key={index}>
                             <Review />
                         </SwiperSlide>
                     ))}
