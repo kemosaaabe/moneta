@@ -8,9 +8,9 @@ const Header = () => {
 
     const onOpenMenu = (isMenuOpen) => {
         if (isMenuOpen) {
-            document.querySelector('body').style.overflow = 'hidden';
+            document.querySelector('body').style.overflowY = 'hidden';
         } else {
-            document.querySelector('body').style.overflow = 'visible';
+            document.querySelector('body').style.overflowY = 'visible';
         }
 
         setIsOpen(isMenuOpen);

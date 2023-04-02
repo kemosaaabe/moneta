@@ -6,7 +6,7 @@ const LongMockup = () => {
         <div className="container">
             <div className={styles.longMockup}>
                 <div className={styles.mockupImg}>
-                    <img src="assets/img/long_mockup.svg" alt="" />
+                    <img src="assets/img/long_mockup.png" alt="" />
                 </div>
                 <div className={styles.mockupText}>
                     <h2>

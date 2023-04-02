@@ -78,7 +78,7 @@ const ManageBlock = () => {
             </div>
             <div className={styles.imageBlock}>
                 <img
-                    src="assets/img/ReviewsManage/manageImg.svg"
+                    src="assets/img/ReviewsManage/manageImg.png"
                     alt="phones"
                 />
             </div>
