@@ -68,7 +68,7 @@
     input:checked ~ .menuItems {
         // right: 0px;
         // transform: translateX(0);
-        transform: translateX(0);
+        transform: translate(0, 0);
 
         box-shadow: -3px 0 8px 1px rgba(0, 0, 0, 0.15);
     }
@@ -111,7 +111,7 @@
         width: 250px;
         top: 0px;
         right: 0;
-        transform: translateX(100%);
+        transform: translate(100%, 0);
         text-align: right;
         transition: transform 0.4s ease-in-out;
         height: 100vh;

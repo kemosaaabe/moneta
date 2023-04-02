@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 65px;
+    padding-top: 75px;
     margin-top: 60px;
     background: url('../../../public/assets/img/footer_bg.svg') no-repeat bottom;
     background-size: 110% 100%;
@@ -22,11 +24,6 @@
         background-size: 210% 100%;
     }
 
-    .footerWrapper {
-        padding-bottom: 65px;
-        padding-top: 75px;
-    }
-
     h3 {
         font-family: 'Raleway', sans-serif;
         font-size: 33px;
@@ -35,6 +32,7 @@
         color: #0029ea;
         margin-bottom: 60px;
         padding: 0 10px;
+        margin-top: 75px;
 
         @media (max-width: 600px) {
             font-size: 31px;
