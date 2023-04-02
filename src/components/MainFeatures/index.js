@@ -2,6 +2,7 @@ import styles from './MainFeatures.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { data } from './slideData';
 import Balls from './Balls';
+import { useMediaQuery } from '../../services/useMediaQuery';
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -27,7 +28,7 @@ const MainFeatures = () => {
                     coverflowEffect={{
                         rotate: 0,
                         stretch: 0,
-                        depth: 200,
+                        depth: 240,
                         modifier: 2.4,
                         slideShadows: false,
                     }}

@@ -7,6 +7,14 @@
     @media (max-width: 1050px) {
         width: 25%;
     }
+
+    @media (max-width: 800px) {
+        width: 33%;
+    }
+
+    @media (max-width: 500px) {
+        width: 50%;
+    }
 }
 
 .mainFeaturesSwiper {
@@ -48,6 +56,10 @@
             top: 33%;
             position: absolute;
             transform: rotate(-45deg);
+        }
+
+        @media (max-width: 500px) {
+            display: none;
         }
     }
 

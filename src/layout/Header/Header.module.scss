@@ -131,6 +131,10 @@
             flex-direction: column;
             gap: 15px;
 
+            @media (max-width: 450px) {
+                padding-right: 0;
+            }
+
             li {
                 a {
                     text-decoration: none;

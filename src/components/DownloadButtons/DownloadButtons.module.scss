@@ -2,6 +2,23 @@
     display: flex;
     gap: 44px;
 
+    @media (max-width: 600px) {
+        gap: 25px;
+    }
+
+    @media (max-width: 470px) {
+        gap: 20px;
+    }
+
+    @media (max-width: 400px) {
+        gap: 10px;
+    }
+
+    @media (max-width: 360px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     a {
         padding: 10px 40px 10px 15px;
         display: flex;
@@ -41,6 +58,27 @@
 
             .linkText {
                 font-size: 17px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            padding: 4px 34px 4px 9px;
+
+            .linkText {
+                font-size: 15px;
+            }
+
+            img {
+                width: 50px;
+            }
+        }
+
+        @media (max-width: 470px) {
+            padding: 7px 15px 7px 7px;
+            gap: 10px;
+
+            img {
+                width: 35px;
             }
         }
     }

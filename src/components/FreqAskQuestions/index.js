@@ -13,6 +13,7 @@ const FreqAskQuestions = () => {
                         <input type="checkbox" name="" id="arrow-checkbox-1" />
                         <label htmlFor="arrow-checkbox-1">
                             Доступно ли приложение для IOS?
+                            <span className={styles.arrow}></span>
                         </label>
                         <div className={styles.faq}>
                             На данный момент нет, мобильное приложение для IOS
@@ -23,6 +24,7 @@ const FreqAskQuestions = () => {
                         <input type="checkbox" name="" id="arrow-checkbox-2" />
                         <label htmlFor="arrow-checkbox-2">
                             Доступно ли приложение для IOS?
+                            <span className={styles.arrow}></span>
                         </label>
                         <div className={styles.faq}>
                             На данный момент нет, мобильное приложение для IOS
@@ -33,6 +35,7 @@ const FreqAskQuestions = () => {
                         <input type="checkbox" name="" id="arrow-checkbox-3" />
                         <label htmlFor="arrow-checkbox-3">
                             Сколько категорий можно добавить?
+                            <span className={styles.arrow}></span>
                         </label>
                         <div className={styles.faq}>
                             На данный момент нет, мобильное приложение для IOS

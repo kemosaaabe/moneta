@@ -2,6 +2,10 @@
 
 .longMockup {
     display: flex;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 }
 
 .mockupImg {
@@ -19,6 +23,27 @@
 
         @media (max-width: 1100px) {
             left: -150px;
+        }
+
+        @media (max-width: 900px) {
+            left: 0;
+            top: -70px;
+            width: 170%;
+        }
+
+        @media (max-width: 800px) {
+            min-width: 650px;
+            left: -70px;
+        }
+
+        @media (max-width: 600px) {
+            min-width: 600px;
+            left: -100px;
+        }
+
+        @media (max-width: 500px) {
+            min-width: 500px;
+            left: -100px;
         }
     }
 
@@ -44,8 +69,14 @@
         }
     }
 
-    @media (max-width: 1100px) {
-        // width: 80%;
+    @media (max-width: 900px) {
+        width: 90%;
+        align-self: center;
+    }
+
+    @media (max-width: 500px) {
+        width: 100%;
+        align-self: center;
     }
 
     p {
@@ -58,6 +89,10 @@
 
         @media (max-width: 1100px) {
             width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 16px;
         }
     }
 }

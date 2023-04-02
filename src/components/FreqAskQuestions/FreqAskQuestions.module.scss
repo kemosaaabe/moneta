@@ -35,6 +35,18 @@
             font-size: 23px;
             font-family: 'Raleway', sans-serif;
 
+            @media (max-width: 600px) {
+                font-size: 21px;
+            }
+
+            @media (max-width: 600px) {
+                font-size: 19px;
+            }
+
+            @media (max-width: 420px) {
+                font-size: 17px;
+            }
+
             a {
                 color: #000;
                 transition: color 0.2s ease-in-out;
@@ -61,30 +73,56 @@
         }
 
         label {
-            display: block;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             cursor: pointer;
             width: 100%;
-            padding: 40px 40px 40px 20px;
+            padding: 40px 0px 40px 20px;
+            gap: 20px;
+            width: 95%;
             font-family: 'Raleway', sans-serif;
             font-weight: 600;
             font-size: 23px;
             transition: all 0.3s ease-in-out;
+
+            @media (max-width: 600px) {
+                font-size: 21px;
+            }
+
+            @media (max-width: 600px) {
+                font-size: 19px;
+            }
+
+            @media (max-width: 420px) {
+                font-size: 17px;
+            }
         }
 
-        label::after {
+        .arrow {
             left: 90%;
-            position: absolute;
-            content: '';
+            top: 0;
+            display: block;
+            // position: absolute;
+            // content: '';
             width: 20px;
             height: 20px;
             border: 1px solid black;
             transform: rotate(-45deg);
             border-width: 0 1px 1px 0;
-            transition: transform 0.2s ease;
+            transition: all 0.2s ease;
+
+            @media (max-width: 450px) {
+                width: 15px;
+                height: 15px;
+            }
         }
 
-        input:checked + label::after {
-            transform: translateY(-5px) rotate(45deg);
+        input:checked + label {
+            .arrow {
+                transform: translateY(-5px) rotate(45deg);
+            }
         }
 
         input:checked ~ .faq {
@@ -106,6 +144,10 @@
             line-height: 140%;
             overflow: hidden;
             transition: all 0.3s ease-in-out;
+
+            @media (max-width: 420px) {
+                font-size: 14px;
+            }
         }
     }
 
