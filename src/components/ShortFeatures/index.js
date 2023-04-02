@@ -8,7 +8,7 @@ const ShortFeatures = () => {
                     <div className={styles.featureTitle}>
                         <div className={styles.featureIcon}>
                             <img
-                                src="/assets/img/shortFeatures/diamond.svg"
+                                src="assets/img/shortFeatures/diamond.svg"
                                 alt="Diamond"
                             />
                         </div>
@@ -23,7 +23,7 @@ const ShortFeatures = () => {
                     <div className={styles.featureTitle}>
                         <div className={styles.featureIcon}>
                             <img
-                                src="/assets/img/shortFeatures/check_mark.svg"
+                                src="assets/img/shortFeatures/check_mark.svg"
                                 alt="Check mark"
                             />
                         </div>
@@ -38,7 +38,7 @@ const ShortFeatures = () => {
                     <div className={styles.featureTitle}>
                         <div className={styles.featureIcon}>
                             <img
-                                src="/assets/img/shortFeatures/bar_chart.svg"
+                                src="assets/img/shortFeatures/bar_chart.svg"
                                 alt="Bar chart"
                             />
                         </div>

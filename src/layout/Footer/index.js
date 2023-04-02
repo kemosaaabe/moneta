@@ -12,7 +12,7 @@ const Footer = () => {
             <div className={styles.footerText}>
                 <div className={styles.author}>
                     <div className={styles.logo}>
-                        <img src="/assets/img/logo.svg" alt="logo" />
+                        <img src="assets/img/logo.svg" alt="logo" />
                         <span>Приложение для учета личных финансов</span>
                     </div>
                     {!isMobile && (

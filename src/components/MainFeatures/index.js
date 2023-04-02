@@ -47,31 +47,31 @@ const MainFeatures = () => {
                 >
                     <SwiperSlide>
                         <img
-                            src="/assets/img/featuresImages/4.png"
+                            src="assets/img/featuresImages/4.png"
                             alt="phone"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src="/assets/img/featuresImages/5.png"
+                            src="assets/img/featuresImages/5.png"
                             alt="phone"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src="/assets/img/featuresImages/1.png"
+                            src="assets/img/featuresImages/1.png"
                             alt="phone"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src="/assets/img/featuresImages/2.png"
+                            src="assets/img/featuresImages/2.png"
                             alt="phone"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src="/assets/img/featuresImages/3.png"
+                            src="assets/img/featuresImages/3.png"
                             alt="phone"
                         />
                     </SwiperSlide>

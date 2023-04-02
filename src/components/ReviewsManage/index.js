@@ -11,7 +11,7 @@ const Review = () => {
         <div className={styles.review}>
             <div className={styles.man}>
                 <div className={styles.manImg}>
-                    <img src="/assets/img/ReviewsManage/man.svg" alt="man" />
+                    <img src="assets/img/ReviewsManage/man.svg" alt="man" />
                 </div>
                 <div className={styles.manName}>
                     <h3>Дмитрий</h3>
@@ -19,7 +19,7 @@ const Review = () => {
                         {[...Array(5)].map((item, index) => (
                             <div key={index}>
                                 <img
-                                    src="/assets/img/ReviewsManage/star.svg"
+                                    src="assets/img/ReviewsManage/star.svg"
                                     alt="start"
                                 />
                             </div>
@@ -78,7 +78,7 @@ const ManageBlock = () => {
             </div>
             <div className={styles.imageBlock}>
                 <img
-                    src="/assets/img/ReviewsManage/manageImg.svg"
+                    src="assets/img/ReviewsManage/manageImg.svg"
                     alt="phones"
                 />
             </div>

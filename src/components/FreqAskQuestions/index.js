@@ -6,7 +6,7 @@ const FreqAskQuestions = () => {
             <h2 className={styles.title}>Частые вопросы</h2>
             <div className={styles.faqContent}>
                 <div className={styles.faqImg}>
-                    <img src="/assets/img/faq_mockup.svg" alt="faqMockup" />
+                    <img src="assets/img/faq_mockup.svg" alt="faqMockup" />
                 </div>
                 <div className={styles.faqText}>
                     <div className={styles.faqItem}>

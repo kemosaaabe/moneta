@@ -13,7 +13,7 @@ const DownloadButtons = ({ footer }) => {
                 }}
             >
                 <img
-                    src="/assets/img/btns/google_play.svg"
+                    src="assets/img/btns/google_play.svg"
                     width={55}
                     height="auto"
                     alt="Google Play"
@@ -33,8 +33,8 @@ const DownloadButtons = ({ footer }) => {
                 <img
                     src={
                         footer
-                            ? '/assets/img/btns/apple_footer.svg'
-                            : '/assets/img/btns/apple.svg'
+                            ? 'assets/img/btns/apple_footer.svg'
+                            : 'assets/img/btns/apple.svg'
                     }
                     alt="App Store"
                     width={55}

@@ -28,7 +28,7 @@ const Header = () => {
         <div className="container">
             <header className={styles.header}>
                 <div className={styles.logo}>
-                    <img src="/assets/img/logo.svg" alt="logo" />
+                    <img src="assets/img/logo.svg" alt="logo" />
                 </div>
                 <div className={styles.navWrapper}>
                     {isMobile ? (
@@ -83,7 +83,7 @@ const Header = () => {
                             <div className={styles.btn}>
                                 <a href="/">
                                     <img
-                                        src="/assets/img/icons/download.svg"
+                                        src="assets/img/icons/download.svg"
                                         alt="download"
                                     />
                                     Скачать

@@ -13,7 +13,7 @@ const Hero = () => {
                     <div className={styles.heroText}>
                         <div>
                             <img
-                                src="/assets/img/icons/union.svg"
+                                src="assets/img/icons/union.svg"
                                 alt="Union"
                             />
                         </div>
@@ -26,7 +26,7 @@ const Hero = () => {
                 </div>
                 <div className={styles.heroImg}>
                     <div className={styles.bg}></div>
-                    <img src="/assets/img/mockup_hero.png" alt="Main mockup" />
+                    <img src="assets/img/mockup_hero.png" alt="Main mockup" />
                 </div>
             </div>
         </div>
