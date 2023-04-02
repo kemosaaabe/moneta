@@ -16,6 +16,14 @@
         background-size: 170% 100%;
     }
 
+    @media (max-width: 650px) {
+        background-size: 190% 100%;
+    }
+
+    @media (max-width: 450px) {
+        background-size: 210% 100%;
+    }
+
     h3 {
         font-family: 'Raleway', sans-serif;
         font-size: 33px;
@@ -23,6 +31,23 @@
         text-align: center;
         color: #0029ea;
         margin-bottom: 60px;
+        padding: 0 10px;
+
+        @media (max-width: 600px) {
+            font-size: 31px;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 29px;
+        }
+
+        @media (max-width: 470px) {
+            font-size: 25px;
+        }
+
+        @media (max-width: 420px) {
+            font-size: 23px;
+        }
     }
 }
 
@@ -35,9 +60,13 @@
     @media (max-width: 850px) {
         flex-direction: column;
         gap: 30px;
-        align-items: flex-start;
+        align-items: center;
         padding-left: 30px;
         width: 100%;
+    }
+
+    @media (max-width: 450px) {
+        align-items: flex-start;
     }
 
     .author {
@@ -50,6 +79,15 @@
             flex-direction: column;
             gap: 8px;
 
+            @media (max-width: 850px) {
+                align-items: center;
+                text-align: center;
+            }
+
+            @media (max-width: 450px) {
+                text-align: left;
+                align-items: flex-start;
+            }
 
             img {
                 width: 130px;
@@ -69,6 +107,15 @@
             font-family: 'Raleway', sans-serif;
             font-size: 16px;
             font-weight: 300;
+
+            @media (max-width: 850px) {
+                width: 60%;
+                text-align: center;
+            }
+
+            @media (max-width: 450px) {
+                text-align: left;
+            }
         }
     }
 
@@ -82,7 +129,11 @@
         }
 
         @media (max-width: 850px) {
-            // gap: 100px;
+            gap: 100px;
+        }
+
+        @media (max-width: 450px) {
+            gap: 0px;
         }
 
         ul {

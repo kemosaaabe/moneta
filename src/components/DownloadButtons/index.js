@@ -1,8 +1,10 @@
 import styles from './DownloadButtons.module.scss';
+import { useMediaQuery } from '../../services/useMediaQuery';
 
 const DownloadButtons = ({ footer }) => {
+    const isMobile = useMediaQuery('(max-width: 600px)');
     return (
-        <div className={styles.buttons} style={{ gap: footer && '130px' }}>
+        <div className={styles.buttons} style={{ gap: footer && (isMobile ? '25px' : '130px') }}>
             <a
                 href="/"
                 style={{
